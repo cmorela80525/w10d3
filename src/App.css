@@ -1,0 +1,97 @@
+body {
+  text-align: center;
+  background-color:darkblue;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin-top: 2em;
+  border: .8em solid white;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+h1 {
+  color:white;
+  font-size:4em;
+}
+
+h2 {
+  color: rgb(250, 233, 136)
+}
+
+h3 {
+  color: rgb(250, 233, 136)
+}
+
+#score {
+    display:inline-block;
+    padding: 0 1em 1em 1em; /*top right bottom left*/
+    border:.4em solid white;
+}
+
+.category-points {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
+
+.category {
+  margin-right: 2em;
+}
+
+#question {
+  background-color:white;
+  color:black;
+  padding:2em;
+  border: 1em solid darkblue
+}
+
+#answer {
+  background-color:white;
+  color:black;
+  padding:1em;
+}
+
+.increase-btn {
+  background-color:green;
+  border-radius: .3em;
+  border: 0;
+  padding: .8em;
+  margin-left:.3em;;
+  margin-right:.3em;
+}
+
+.decrease-btn {
+  background-color:red;
+  border-radius: .3em;
+  border: 0;
+  padding: .8em
+}
+
+.reset-btn {
+  background-color:white;
+  border-radius: .3em;
+  border: 0;
+  padding: .5em;
+  
+}
+
+#get-question {
+  margin-top: 2em;
+  background-color:gold;
+  border-radius: .3em;
+  border: 0;
+  padding: .5em
+}
+
+.answer-btn {
+  background-color:gold;
+  border-radius: .3em;
+  border: 0;
+  padding: .5em;
+  margin-bottom:2em;
+}

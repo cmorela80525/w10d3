@@ -1,15 +1,23 @@
-body {
-  text-align: center;
-  background-image: url("/src/assets/blue-background.jpg");
-  background-size: cover;
-  display: flex;
-  justify-content: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.container {
-  margin-top: 2em;
-  border: .8em solid white;
-  width: 50vw;
+.App {
+  /* text-align: center; */
+  background-image: url("/src/assets/blue-background.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+   display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+.board-container {
+  border: .7em dotted white;
+  width: 70%;
+  height: 55%;
   display: flex;
   flex-direction: column;
   align-items:center;
@@ -17,7 +25,7 @@ body {
 
 h1 {
   color:white;
-  font-size:4em;
+  font-size: 6vw;
 }
 
 h2 {
@@ -28,33 +36,25 @@ h3 {
   color: gold;
 }
 
-#score {
-    display:inline-block;
-    padding: 0 1em 1em 1em; /*top right bottom left*/
+#score-container {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 0 1em 1em 1em;
     border:.4em solid white;
 }
 
 .category-points {
-  display: flex;
-  flex-direction:row;
-  justify-content: space-between;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
-.category {
-  margin-right: 2em;
-}
-
-#question {
+.text-box {
   background-color:white;
   color:black;
-  padding:2em;
+  /* padding:2em; */
   border: .5em solid gold;
-}
-
-#answer {
-  background-color:white;
-  color:black;
-  padding:1em;
+  width: 80%;
+  margin-bottom: 1em;
 }
 
 .increase-btn {
@@ -95,4 +95,15 @@ h3 {
   border: 0;
   padding: .5em;
   margin-bottom:2em;
+}
+
+
+/* larger screens */
+
+@media(min-width: 669px) {
+
+  .text-box {
+    padding: 2em;
+  }
+
 }

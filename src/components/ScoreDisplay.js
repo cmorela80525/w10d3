@@ -18,7 +18,7 @@ function resetScore() {
 }
 
     return (
-        <div id='score'>
+        <div id='score-container'>
             <h2>Score: {score} </h2>
             <button className="decrease-btn" onClick={decrementScore}>-</button>
             <button className="increase-btn"onClick={incrementScore}>+</button>

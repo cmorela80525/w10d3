@@ -32,13 +32,13 @@ function handleAnswerClick() {
 
 if(answerClicked === false) {
   return (
-    <div className='container'>
+    <div className='board-container'>
       <button id="get-question" onClick={handleQuestionClick}>Get random trivia question</button>
       <div className='category-points'>
-        <h3 className='category'>Category: {triviaData.category?.title}</h3>
+        <h3>Category: {triviaData.category?.title}</h3>
         <h3>Points: {triviaData.value}</h3>
       </div>
-      <h3 id='question'>Question: {triviaData.question}</h3>
+      <h3 className='text-box'>Question: {triviaData.question}</h3>
       <button className="answer-btn" onClick={handleAnswerClick}>Click to Reveal Answer</button>
     </div> 
   )
@@ -47,13 +47,13 @@ if(answerClicked === false) {
 
 if(answerClicked ) {
  return (
-    <div className='container'>
+    <div className='board-container'>
       <button id="get-question" onClick={handleQuestionClick}>Get random trivia question</button>
       <div className='category-points'>
-        <h3 className='category'>Category: {triviaData.category?.title}</h3>
+      <h3>Category: {triviaData.category?.title}</h3>
         <h3>Points: {triviaData.value}</h3>
       </div>
-      <h3 id='answer'>Answer: {triviaData.answer}</h3>
+      <h3 className='text-box'>Answer: {triviaData.answer}</h3>
       
     </div> 
   )
